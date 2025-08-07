@@ -1,0 +1,19 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-light-pink: #E0B5B5;
+  --color-lighter-pink: #FCEAEA;
+  --color-peach: #FF8888;
+  --color-hoverpink: #cb9d9d;
+  --color-red: #e76c6c;
+  --color-hoverred: #da5353;
+  --color-inputbg: #e5cfcf;
+
+
+  --breakpoint-fornav :"899px";
+  --breakpoint-forwrap :"1020px";
+}
