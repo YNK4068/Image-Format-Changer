@@ -92,6 +92,8 @@
       }
 
       msg.value="";
+      mail.value="";
+      name.value="";
       alert(" Message send succussfully 👍");
     }
 

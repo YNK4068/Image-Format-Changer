@@ -713,6 +713,13 @@
       }
     }
   }
+  .hover\:bg-\[\#eccda5\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #eccda5;
+      }
+    }
+  }
   .hover\:bg-gradient-to-l {
     &:hover {
       @media (hover: hover) {
@@ -758,6 +765,11 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .active\:bg-\[\#d5b78e\] {
+    &:active {
+      background-color: #d5b78e;
     }
   }
   .sm\:mx-17 {
