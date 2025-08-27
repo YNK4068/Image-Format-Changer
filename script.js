@@ -71,3 +71,39 @@
       var menu = document.getElementById("menubtn"); 
       menu.classList.toggle("hidden");
     }
+
+    function sendMsg(){
+      
+      let name = document.getElementById("name");
+      let mail = document.getElementById("mail");
+      let msg = document.getElementById("msg");
+      
+      if(!name.value){
+        alert("Please enter a your name before sending.");
+        return;
+      }
+      else if(!mail.value){
+        alert("Please enter a your email before sending.");
+        return;
+      }
+      else if(!msg.value){
+        alert("Please enter a message before sending.");
+        return;
+      }
+
+      msg.value="";
+      alert(" Message send succussfully 👍");
+    }
+
+    function showHide(){
+      let pass = document.getElementById("password");
+      let eye = document.getElementById("eye");
+      if(pass.type === "password"){
+        pass.type = "text";
+        eye.src = "./assets/hide_pass.png";
+      }
+      else{
+        pass.type = "password";
+        eye.src = "./assets/show_pass.png";
+      }
+    }

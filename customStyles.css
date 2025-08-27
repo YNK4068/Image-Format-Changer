@@ -11,3 +11,11 @@
   }
 }
 
+@media only screen and (max-width: 342px)  {
+  
+  .ctm-size{
+    font-size: 14px;
+  }
+}
+
+

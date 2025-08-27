@@ -10,55 +10,69 @@
     
   </head>
 
-  <body>
+  <body class="bg-[#C1C0C3]">
     <!-- Navbar -->
-    <nav class="bg-(--color-light-pink) flex items-center justify-between  w-auto h-28  shadow-2xl mb-10">
+    <nav class="bg-(--color-light-pink) text-white flex items-center justify-between  w-auto h-10 md:h-16  shadow-2xl mb-10">
       <div class="flex items-center justify-center">
-        <img class="w-12 mx-3 md:ml-8" src="./assets/file-format.png" alt="">
-        <h1 class=" text-2xl font-semibold mx-2 md:text-3xl ">Format Converter</h1>
+        <img class=" w-5 mx-[4px] md:ml-8 md:w-8" src="./assets/file-format.png" alt="">
+        <h1 class=" text-[17px] font-semibold mx-[2px] md:text-3xl ">Format Converter</h1>
       </div>
       
-      <ul class="hidden md:flex justify-center items-center [&>*]:m-5 [&>*]:p-2 [&>*]:font-bold [&>*]:hover:text-red-700  [&>*]:hover:border-b-4 [&>*]:hover:border-white">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="hidden md:flex justify-center items-center [&>*]:m-5 [&>*]:p-2 [&>*]:font-bold [&>*]:hover:text-[#faebd7]  [&>*]:hover:bg-(--color-gray-pink) [&>*]:rounded-[10px] [&>*]:transition [&>*]:duration-200 [&>*]:ease-in-out">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./contact.html" target="_parent">Contact</a></li>
         <li><a href="#" target="_parent">About Us</a></li>
         <li><a href="#" target="_parent">Help</a></li>
       </ul>
 
-      <!-- Login -->
-       <div>
-          <button class="hidden md:inline bg-[#D8ECFE] hover:bg-[#b0d9ff] hover:border-white p-2 border-3 border-[#8d673d] w-20 font-bold  rounded-[10px]">Login</button>
-       </div>
+      <div class="flex items-center justify-center">
+        <!-- Login -->
+        <div class="flex flex-row items-center justify-center hover:text-[#faebd7]  hover:bg-(--color-gray-pink) rounded-[10px] transition duration-200 ease-in-out ">
+            <img class="w-4 hidden md:block" src="./assets/loginSymbol.png" alt="">
+            <a href="./login.html" class="hidden   md:inline-block md:text-center p-2 font-bold w-15 ">Login</a>
+        </div>
+        <!-- Sign in -->
+        <div class="flex flex-row items-center justify-center mx-4   hover:text-[#faebd7]  hover:bg-(--color-gray-pink) rounded-[10px] transition duration-200 ease-in-out">
+            <img class="w-4 hidden md:block" src="./assets/signinSymbol.png" alt="">
+            <a href="./sign_up.html" class="hidden   md:inline-block md:text-center p-2 font-bold w-18 ">Sign in</a>
+        </div>
+      </div>
 
       <!-- Menu button   -->
       <button onclick="handlemenu()">
-        <img class="w-8 mx-6 h-8 p-1 border-2 border-gray-600 rounded-[3px] md:hidden" src="assets/menu.png" alt="">
+        <img class="w-6 mx-6 h-6 p-1  rounded-[3px] md:hidden" src="assets/menu.png" alt="">
       </button>
 
       <!-- Mobile menu -->
-      <div id="menubtn" class="fixed inset-0 bg-white h-screen hidden md:hidden">
-        <div>
-            <nav class="bg-(--color-light-pink) flex items-center justify-between  w-auto h-28 mb-2">
+      <div id="menubtn" class="fixed inset-0 bg-[#C1C0C3] h-screen hidden md:hidden">
+        <div class="bg-(--color-gray-pink) h-[281px]">
+            <nav class="bg-(--color-light-pink) flex items-center justify-between  w-auto h-10  shadow-2xl mb-1">
               <div class="flex items-center justify-center">
-                <img class="w-12 mx-3 md:ml-8" src="./assets/file-format.png" alt="">
-                <h1 class=" text-2xl font-semibold mx-2 md:text-3xl ">Format Converter</h1>
+                <img class="w-5 mx-[4px] md:ml-8" src="./assets/file-format.png" alt="">
+                <h1 class=" text-[17px] font-semibold mx-[2px] md:text-3xl ">Format Converter</h1>
               </div>
               <button onclick="handlemenu()">
-                <img class="w-8 mx-6 h-8 p-1 border-2 border-gray-600 rounded-[3px] md:hidden" src="assets/x-button.png" alt="">
+                <img class="w-6 mx-6 h-6 p-1  rounded-[3px] md:hidden" src="assets/x-button.png" alt="">
               </button>
             </nav>
 
             <div>
-                <ul  class=" flex flex-col [&>*]:my-3 [&>*]:mx-3">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Contact</a></li>
+                <ul  class=" flex flex-col [&>*]:my-2 [&>*]:mx-2 [&>*]:text-[11px] [&>*]:block">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./contact.html" target="_parent">Contact</a></li>
                   <li><a href="#" target="_parent">About Us</a></li>
                   <li><a href="#" target="_parent">Help</a></li>
                 </ul>
             </div>  
-            <div class="h-[1px] bg-gray-300 mx-2 my-8"></div>
-            <div >
-                <button class="bg-[#D8ECFE] mx-3 p-1 border-3 border-[#8d673d] w-20 font-bold  rounded-[10px]">Login</button>
+            <div class="h-[1px] bg-gray-300 mx-2 my-5"></div>
+            
+            <div class="flex items-center mx-1 my-1" >
+                <img class="w-4" src="./assets/signinSymbol.png" alt="">
+                <a href="./sign_up.html" class="mx-1 inline-block text-center w-11 h-7 text-[13px] font-bold  ">Sign in</a>
+            </div>
+            <div class="flex items-center mx-1" >
+                <img class="w-4" src="./assets/loginSymbol.png" alt="">
+                <a href="./login.html" class="mx-1 inline-block text-center w-9 h-7 text-[13px] font-bold  ">Login</a>
             </div>
         </div>
       </div>
@@ -67,9 +81,9 @@
     </nav>
 
       <div class="flex justify-center items-center flex-col">
-        <div class="flex justify-center items-center p-5 flex-col bg-(--color-lighter-pink) w-[85vw] h-130 shadow-2xl rounded-3xl md:w-[90vw] lg:w-[70vw] md:flex-row-reverse md:items-center md:justify-center">
+        <div class="flex justify-center items-center p-5 flex-col text-white bg-(--color-gray-pink) w-[85vw] h-130 shadow-2xl rounded-3xl md:w-[90vw] lg:w-[70vw] md:flex-row-reverse md:items-center md:justify-center">
             <!-- Upload file system -->
-            <div class=" custom-media1s flex items-center flex-col justify-center w-[66vw] h-[60vw] md:h-80 md:mx-3 border-4 border-dashed border-[#8d673d82] rounded-2xl hover:border-white sm:w-90" >
+            <div class=" custom-media1s flex items-center flex-col justify-center w-[66vw] h-[60vw] md:h-80 md:mx-3 border-4 border-dashed border-(--color-inputbg) rounded-2xl hover:border-[#c6da7e] sm:w-90" >
               <input type="file" id="imageInput" accept="image/*" style="display: none" />
               <label for="imageInput"><img class="w-30" src="assets/upload_file.png" alt=""/></label>
               <label for="imageInput">Upload File</label>
@@ -79,7 +93,7 @@
             <div class=" flex flex-col justify-center items-center gap-1 md:gap-5 md:mx-3 md:items-baseline">
               <div class="flex items-center justify-center m-6 mt-3 ">
                 <label for="format">Convert To :</label>
-                <select class="bg-(--color-light-pink) p-[2px] rounded-[5px] m-2 hover:bg-(--color-hoverpink)" id="format">
+                <select class="bg-gradient-to-l  from-[#f5f8ea] to-[#faebd7] text-black p-[2px] rounded-[5px] m-2 " id="format">
                   <option value="jpeg">JPEG</option>
                   <option value="png">PNG</option>
                   <option value="webp">WEBP</option>
@@ -91,23 +105,23 @@
               <label class="my-2" for="resizeWidth">Resize (optional):</label>
               <div class="flex justify-center items-center">
                 <label class="my-[3px]" for="resizeWidth">Width : </label> 
-                <input class="bg-(--color-inputbg) rounded-[3px] md:w-35" type="number" id="resizeWidth"  placeholder="Width" /> 
+                <input class="bg-(--color-inputbg) px-[6px] text-black rounded-[3px] md:w-35" type="number" id="resizeWidth"  placeholder="Width" /> 
               </div>
               
               <!-- Height -->
               <div class="flex justify-center items-center">
                 <label class="my-[3px]" for="resizeHeight">Height :</label>
-                <input class="bg-(--color-inputbg) rounded-[3px] md:w-34" type="number" id="resizeHeight"  placeholder="Height"  />
+                <input class="bg-(--color-inputbg) px-[6px] text-black rounded-[3px] md:w-34" type="number" id="resizeHeight"  placeholder="Height"  />
               </div>
 
               <label class="my-2"><input type="checkbox" id="grayscale" /> Apply Grayscale</label>
             </div>
           </div>
           <!-- Convert button -->
-            <button class="bg-(--color-red) hidden text-white border-black border-2 text-2xl w-50 h-15 rounded-[6px] mt-6 mb-3 hover:bg-(--color-hoverred) hover:text-white hover:border-white" onclick="convertImage()" id="convertbtn">Convert</button>
+            <button class="bg-[#faebd7] hidden text-black border-black border-2 text-2xl w-50 h-15 rounded-[6px] mt-6 mb-3 hover:bg-(--color-hoverred)  hover:border-white bg-gradient-to-l  from-[#f5f8ea] to-[#faebd7]" onclick="convertImage()" id="convertbtn">Convert</button>
             <p id="done_msg" class="text-green-500 hidden font-bold text-[12px] sm:text-2xl md:text-3xl">👇Format changed! Scroll down to Download image👇</p>
             <img class="w-75 mt-15 mb-7 md:w-[30vw]"  id="preview" alt="Image Preview" style="display: none" />
-            <label id="downloadbtn" class="bg-(--color-red) hidden text-center text-white p-3 border-black border-2 text-2xl w-50 h-15 mb-20 rounded-[6px] hover:bg-(--color-hoverred) hover:text-white hover:border-white"><a  id="downloadLink" style="display: none" download> Download Image</a></label>
+            <label id="downloadbtn" class=" hidden text-center  p-3 border-black border-2 text-2xl w-50 h-15 mb-20 rounded-[6px] hover:border-white bg-gradient-to-l  from-[#f5f8ea] to-[#faebd7]"><a  id="downloadLink" style="display: none" download> Download Image</a></label>
 
           <!-- help section -->
   

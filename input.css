@@ -5,13 +5,14 @@
   --color-midnight: #121063;
   --color-tahiti: #3ab7bf;
   --color-bermuda: #78dcca;
-  --color-light-pink: #E0B5B5;
-  --color-lighter-pink: #FCEAEA;
+  --color-light-pink: #282828;
+  --color-gray-pink: #5C5C5C;
   --color-peach: #FF8888;
   --color-hoverpink: #cb9d9d;
   --color-red: #e76c6c;
   --color-hoverred: #da5353;
-  --color-inputbg: #e5cfcf;
+  --color-inputbg: #F5F8EA;
+  --color-inputtext: ;
 
 
   --breakpoint-fornav :"899px";

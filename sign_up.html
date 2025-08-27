@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./customStyles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-16x16.png">
+    
+  </head>
+  <body class="bg-[#C1C0C3]">
+    
+    <div class="flex flex-col justify-center">
+      <div class="main-container mx-auto mt-7 bg-[#5c5c5c] w-[93%] h-152 rounded-[7px] sm:w-[70%] lg:w-[40%] xl:w-[35%]">
+
+      <div class="flex flex-col justify-center items-center">
+          <div>
+            <h1 class=" text-[#faebd7] text-3xl my-7 font-bold">SIGN-UP</h1>
+          </div>
+
+          <!-- Input fields -->
+          <div class="w-full ">
+            <!-- Name -->
+            <div class="flex flex-col mx-6 my-6 text-white relative sm:mx-17">
+              <label class="absolute -top-3 left-2 bg-[#5c5c5c] px-2" for="name">Name</label>
+              <input class="block border border-gray-400 p-4 h-15 rounded-[12px] hover:border-[#faebd7] focus:border-[#faebd7] focus:outline-none transition duration-300 ease-in-out" type="text" id="name" placeholder="Enter Your Name">
+            </div>
+
+            <!-- Mobile number -->
+            <div class="flex flex-col mx-6 my-6 text-white relative sm:mx-17">
+              <label class="absolute -top-3 left-2 bg-[#5c5c5c] px-2" for="Mobile">Mobile Number</label>
+              <input class="block border border-gray-400 p-4 h-15 rounded-[12px] hover:border-[#faebd7] focus:border-[#faebd7] focus:outline-none transition duration-300 ease-in-out" type="tel" id="Mobile" placeholder="Enter Your Mobile Number">
+            </div>
+            
+            <!-- Email -->
+            <div class="flex flex-col mx-6 my-6 text-white relative sm:mx-17">
+              <label class="absolute -top-3 left-2 bg-[#5c5c5c] px-2" for="email">Email</label>
+              <input class="block border border-gray-400 p-4 h-15 rounded-[12px] hover:border-[#faebd7] focus:border-[#faebd7] focus:outline-none transition duration-300 ease-in-out" type="mail" id="email" placeholder="Please Enter Your Email">
+            </div>
+            <!-- Password -->
+            <div class="flex flex-col mx-6 my-6 text-white relative sm:mx-17">
+              <label class="absolute -top-3 left-2 bg-[#5c5c5c] px-2" for="password">Password</label>
+              <input class="block border border-gray-400 p-4 h-15 rounded-[12px] hover:border-[#faebd7] focus:border-[#faebd7] focus:outline-none transition duration-300 ease-in-out" type="password" id="password" placeholder="Please Enter Your Password">
+              <img class="w-8 absolute right-[18px] top-[14px]" id="eye" onclick="showHide()" src="./assets/show_pass.png" alt="">
+            </div>
+          </div>
+      </div>
+      
+      <button class="block mx-auto p-3 w-35 rounded-[10px] my-6  text-black font-bold sm:w-38 bg-gradient-to-l  from-[#f5f8ea] to-[#faebd7]">Sign-up</button>
+      
+      <div class="relative w-full text-[12px]">
+         <div class="w-75 text-center absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]  block mx-auto text-gray-200">If you already have a account? <a href="./login.html" class="text-orange-300">Login Now</a></div>
+      </div>
+      </div>
+    
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
